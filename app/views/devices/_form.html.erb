@@ -1,0 +1,107 @@
+
+
+
+  <!-- <fieldset>
+    <h2 class="fs-title"> Create your account </h2>
+    <h3 class="fs-subtitle">This is step 1</h3>
+    <input type="text" name="email" placeholder="Email" />
+    <input type="password" name="pass" placeholder="Password" />
+    <input type="password" name="cpass" placeholder="Confirm Password" />
+    <input type="button" name="next" class="next action-button" value="Next" />
+  </fieldset>
+  <fieldset>
+    <h2 class="fs-title">Social Profiles</h2>
+    <h3 class="fs-subtitle">Your presence on the social network</h3>
+    <input type="text" name="twitter" placeholder="Twitter" />
+    <input type="text" name="facebook" placeholder="Facebook" />
+    <input type="text" name="gplus" placeholder="Google Plus" />
+    <input type="button" name="previous" class="previous action-button" value="Previous" />
+    <input type="button" name="next" class="next action-button" value="Next" />
+  </fieldset>
+  <fieldset>
+    <h2 class="fs-title">Personal Details</h2>
+    <h3 class="fs-subtitle">We will never sell it</h3>
+    <input type="text" name="fname" placeholder="First Name" />
+    <input type="text" name="lname" placeholder="Last Name" />
+    <input type="text" name="phone" placeholder="Phone" />
+    <textarea name="address" placeholder="Address"></textarea>
+    <input type="button" name="previous" class="previous action-button" value="Previous" />
+    <input type="submit" name="submit" class="submit action-button" value="Submit" />
+  </fieldset> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="utf-8">
+        <title>Fullscreen Responsive Register Template</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+        <!-- CSS -->
+
+        <link rel="stylesheet" href="/assets/css2/style.css">
+</head>
+    <body>
+
+        <div class="register-container container " style="margin-right:-6%;margin-top:10%;" >
+            <div class="row">
+
+                </div>
+                
+                <div class="register span6">
+                <%= form_for(@device) do |f| %>
+                    <form action="" method="post">
+                        <h2>ایجاد  <span class="red"><strong>دستگاه</strong></span></h2>
+                        <label for="firstname">نام دستگاه</label>
+                        <%= f.text_field :name ,class:'inp-text' ,style:" width: 40%;"%><br>
+                    <!--     <input type="text" id="firstname" name="firstname" placeholder="enter your first name...">  -->
+                        <label for="lastname">قیمت</label>
+                        <%= f.number_field :price ,class:'inp-text' ,style:" width: 40%;margin-right:6%;"%><br>
+                       <!--  <input type="text" id="lastname" name="lastname" placeholder="enter your first name..."> -->
+                        <label for="username">عکس</label>
+                        <%= f.file_field :avatar , class:'inp-text',style:" width: 40%; margin-right: 30%;" %><br>
+                        <!-- <input type="text" id="username" name="username" placeholder="choose a username..."> -->
+                        <label for="email">توضیحات</label>
+                        <%= f.text_field :description ,class:'inp-text' , style: 'width:389px; height:246px;'%>
+<!--                    <input type="text" id="email" name="email" placeholder="enter your email..."> -->
+        
+                      <div class="clearfix form-actions" style="margin-right:25%;">
+                      <div class="col-md-offset-3 col-md-9">
+                        <%= content_tag :button, :type => :submit, :class => "btn btn-danger" ,style:'padding-left:11%;' do %>
+                        <i class="icon-ok bigger-110" ></i>
+                        <%=t :ذخیره%>
+                        <% end %>
+                      </div>
+                    </div>
+                      
+                    </form>
+                <%end%>
+                </div>
+                
+            </div>
+        </div>
+
+
+        <script src="/assets/js2/jquery-1.8.2.min.js"></script>
+        <script src="/assets/bootstrap/js/bootstrap.min.js"></script>
+        <script src="/assets/js2/jquery.backstretch.min.js"></script>
+        <script src="/assets/js2/scripts.js"></script>
+
+    </body>
+
+</html>
+
+

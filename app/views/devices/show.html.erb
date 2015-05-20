@@ -1,0 +1,28 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>نام دستگاه:</strong>
+  <%= @device.name %>
+</p>
+
+<p>
+  <strong>ثیمت:</strong>
+  <%= @device.price %>
+</p>
+
+<p>
+  <strong>توضیحات:</strong>
+  <%= @device.description %>
+</p>
+
+<p>
+  <strong>تمرین:</strong>
+  <%= @device.workout_id %>
+</p>
+<div style="height:100px; width:100px;">
+  <strong>Avatar:</strong>
+  <%=image_tag @device.avatar.url %>
+</div>
+
+
+<%= link_to 'Edit', edit_device_path(@device) %> |

@@ -1,0 +1,73 @@
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+        <!-- CSS -->
+
+        <link rel="stylesheet" href="/assets/css2/style.css">
+</head>
+    <body>
+
+        <div class="register-container container " style="margin-right:-6%;margin-top:10%;" >
+            <div class="row">
+
+                </div>
+                
+                <div class="register span6">
+                <%= form_for(@workout) do |f| %>
+                    <form action="" method="post">
+                        <h2>ایجاد  <span class="red"><strong> تمرین </strong></span></h2>
+                        <label for="firstname">نام تمرین</label>
+    					<%= f.text_field :name ,class:'inp-text' ,style:" width: 40%;"%><br>
+                    <!--     <input type="text" id="firstname" name="firstname" placeholder="enter your first name...">  -->
+                        <label for="lastname"> نام دستگاه</label>
+                        <%= select_tag :device_name, options_for_select(@devices_name) ,style:" width: 40%;" %><br><br>
+                       <!--  <input type="text" id="lastname" name="lastname" placeholder="enter your first name..."> -->
+                        <label for="username" style="margin-right:13%;">عکس</label>
+    					<%= f.file_field :avatar , class:'inp-text',style:" width: 40%; margin-right: 37%;" %><br><br>
+                        <!-- <input type="text" id="username" name="username" placeholder="choose a username..."> -->
+
+<!--                    <input type="text" id="email" name="email" placeholder="enter your email..."> -->
+        
+                      <div class="clearfix form-actions" style="margin-right:25%;">
+                      <div class="col-md-offset-3 col-md-9">
+                        <%= content_tag :button, :type => :submit, :class => "btn btn-danger" ,style:'padding-left:11%;' do %>
+                        <i class="icon-ok bigger-110" ></i>
+                        <%=t :ذخیره%>
+                        <% end %>
+                      </div>
+                    </div>
+                      
+                    </form>
+                <%end%>
+                </div>
+                
+            </div>
+        </div>
+
+
+        <script src="/assets/js2/jquery-1.8.2.min.js"></script>
+        <script src="/assets/bootstrap/js/bootstrap.min.js"></script>
+        <script src="/assets/js2/jquery.backstretch.min.js"></script>
+        <script src="/assets/js2/scripts.js"></script>
+
+    </body>
+
+</html>
+
+

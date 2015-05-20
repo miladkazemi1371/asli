@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Device:</strong>
+  <%= @performed.device_id %>
+</p>
+
+<p>
+  <strong>Work:</strong>
+  <%= @performed.work_id %>
+</p>
+
+<%= link_to 'Edit', edit_performed_path(@performed) %> |
+<%= link_to 'Back', performeds_path %>

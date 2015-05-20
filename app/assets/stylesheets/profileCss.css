@@ -1,0 +1,136 @@
+.mytest{
+    padding: 12px;
+}
+
+html {
+    overflow-x: hidden;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-repeat: repeat-x,repeat-y;
+}
+
+a {
+    text-decoration: none:;
+}
+
+* {
+    direction: rtl;
+    border: none;
+    outline: none;
+}
+
+header {
+}
+
+
+    
+footer {
+    height: auto;
+    display: block;
+}
+
+    footer .email {
+        height: 122px;
+        background-color: #40403a;
+    }
+
+        footer .email .btn {
+            display:inline-block;
+            font-size: 15px;
+            margin-right: 30px;
+            margin-top: -1px;
+        }
+        
+        footer .email .form-control {
+            display:inline-block;
+            width: 300px;
+            margin-right:17px;
+            margin-top:46px;
+            font-size:18px;
+        }
+
+        footer .email .txt {
+            margin-right: 350px;
+            color:white;
+            font-size:20px;
+        }
+        
+    footer .contactUs {
+        height: 50px;
+        background-color: #2f2f2b;
+    }
+    footer .contactUs .twitter{
+        margin-top:-1px;
+        margin-right:10px;
+        background-image:url(pic/a1.jpg);
+        display:inline-block;
+        width:51px;
+        height:52px;
+        
+    }
+    footer .contactUs .facebook{
+        margin-top:-1px;
+        margin-right:10px;
+        background-image:url(pic/a2.jpg);
+        display:inline-block;
+        width:51px;
+        height:52px;
+    }
+    footer .contactUs .instagram{
+        margin-top:-1px;
+        margin-right:10px;
+        background-image:url(pic/a3.jpg);
+        display:inline-block;
+        width:51px;
+        height:52px;
+    }
+    footer .contactUs .twitter:hover{
+        margin-top:-1px;
+        margin-right:10px;
+        background-image:url(pic/a11.jpg);
+        display:inline-block;
+        width:51px;
+        height:52px;
+        
+    }
+    footer .contactUs .facebook:hover{
+        margin-top:-1px;
+        margin-right:10px;
+        background-image:url(pic/a22.jpg);
+        display:inline-block;
+        width:51px;
+        height:52px;
+    }
+    footer .contactUs .instagram:hover{
+        margin-top:-1px;
+        margin-right:10px;
+        background-image:url(pic/a33.jpg);
+        display:inline-block;
+        width:51px;
+        height:52px;
+    }
+    footer .contactUs .contactInfo{
+        margin-top:-1px;
+        margin-right:560px;
+        background-image:url(pic/contact2.jpg);
+        display:inline-block;
+        width:457px;
+        height:52px;
+    }
+    
+    footer .copyWrite {
+        height: 70px;
+        background-color:#40403a;
+    }
+    footer .copyWrite .logo{
+        display:inline-block;
+        height: 70px;
+        background-color:#40403a;
+    }
+    footer .copyWrite .cop{
+        font-size:17px;
+        color:white;
+        margin-right:400px;
+        margin-top:-40px;
+    }

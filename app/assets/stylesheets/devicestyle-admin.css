@@ -1,0 +1,20 @@
+
+form { margin: 25px 0 0 29px; width: 450px; padding-bottom: 30px; margin-right: 36%; margin-top: 5%; }
+
+fieldset { margin: 0 0 22px 0; border: 1px solid #A33200; padding: 12px 17px; background-color: #8C8787; }
+legend { font-size: 1.1em; background-color: #A33200; color: #FFFFFF; font-weight: bold; padding: 4px 8px; direction: ltr;}
+
+label.float { float: left; display: block; width: 100px; margin: 4px 0 0 0; clear: left; }
+label { display: block; width: auto; margin: 0 0 10px 0; }
+label.spam-protection { display: inline; width: auto; margin: 0; }
+
+input.inp-text, textarea, input.choose, input.answer { border: 1px solid #909090; padding: 3px; }
+input.inp-text { width: 300px; margin: 0 0 8px 0; }
+textarea { width: 400px; height: 150px; margin: 0 0 12px 0; display: block; }
+
+input.choose { margin: 0 2px 0 0; }
+input.answer { width: 40px; margin: 0 0 0 10px; }
+input.submit-button { font: 1.4em Georgia, "Times New Roman", Times, serif; letter-spacing: 1px; display: block; margin: 23px 0 0 0; }
+
+form br { display: none; }
+

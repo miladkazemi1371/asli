@@ -1,0 +1,36 @@
+<body background="/assets/gray2.jpg">
+
+<p id="notice"><%= notice %></p>
+
+
+<div class="well text-center" id="program-show-main-div"  style="height: 334px ;">
+<p>
+
+<div class="row col-md-8">
+	<div class="col-md-4">
+		<%= image_tag("s2.jpg", size: "500x500", :class => "pull-right" , style: 'margin-right: -407%;width:110px;height:165px;')%>
+	</div>
+	<div class="col-md-4">
+	<p class="pull-right" id="program-show-name" style="margin: 0 auto;margin-right:-150%;">
+ 		<strong style="font-size:30px;"><%= @program.name %> </strong></br> </br> </br>
+ 	</p>
+ 	</div>
+ 	<div class="col-md-4">
+	<p class="pull-right" id="program-show-name" style="margin: 0 auto;margin-right:26%; margin-top:43%;">
+ 		<%= @program.description %>
+ 	</p>
+ 	</div>
+</div>
+</p>
+
+<div class="row">
+	<%= form_tag select_program_profiles_path do %>
+		<%= hidden_field_tag :program_id , @program.id %>
+		<%= submit_tag 'انتخاب', :class => "btn btn-danger" , style: 'margin-top:34%; margin-left:-59%;'%>
+	<% end %>
+</div>
+
+</div>
+
+ <!-- <%= link_to 'ویرایش', edit_program_path(@program) %>  -->
+</body>

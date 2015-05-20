@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Performeds</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Device</th>
+      <th>Work</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @performeds.each do |performed| %>
+      <tr>
+        <td><%= performed.device_id %></td>
+        <td><%= performed.work_id %></td>
+        <td><%= link_to 'Show', performed %></td>
+        <td><%= link_to 'Edit', edit_performed_path(performed) %></td>
+        <td><%= link_to 'Destroy', performed, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Performed', new_performed_path %>

@@ -1,0 +1,54 @@
+
+
+<!-- <section class="login">
+	<div class="titulo">Staff Login</div>
+	<form action="#" method="post" enctype="application/x-www-form-urlencoded">
+    	<input type="text" required title="Username required" placeholder="Username" data-icon="U">
+        <input type="password" required title="Password required" placeholder="Password" data-icon="x">
+        <div class="olvido">
+        	<div class="col"><a href="#" title="Ver Carásteres">Register</a></div>
+            <div class="col"><a href="#" title="Recuperar Password">Fotgot Password?</a></div>
+        </div>
+        <a href="#" class="enviar">Submit</a>
+    </form>
+</section> -->
+
+<!--
+<div class="top">  
+        <nav class="navbar top_page">
+    
+            <div class="container-fluid contained">
+                <div class="navbar-header head">
+                    <a class="navbar-brand brand" href="#">
+          
+                    <img  class ="brandpic" alt="Brand" src="banner.png" style="width:150px; height:150px" >
+                    </a>
+                </div>
+            </div>
+
+        </nav>
+
+    </div>
+<div style="margin-left:1.5%; background-color:rgb(145,23,60);">
+<ul class="nav nav-pills">
+  <li role="presentation" class="active"><a href="#">Home</a></li>
+  <li role="presentation"><a href="#">Profile</a></li>
+  <li role="presentation"><a href="#">Sign Up</a></li>
+  <li role="presentation"><a href="#">Login</a></li>
+</ul> -->
+<section class="login">
+	<div class="titulo">ورود</div>
+	<%= bootstrap_form_for(resource, :as => resource_name, :url => session_path(resource_name)) do |f| %>
+          <%= f.email_field :email, :placeholder => "نام کاربری" ,style: 'background-color:#141414 ; border: 1px solid #0b0b0b;'%>
+          <%= f.password_field :password , :placeholder =>"رمز عبور" , style: 'width:100% ; height:45px'%>
+        <div style="float: left">
+          <% if devise_mapping.rememberable? -%>
+		        <div><%= f.check_box :remember_me , label_class: "remember_me_class" %></div>
+		      <% end -%>
+        </div>
+        <div class="olvido">
+        <%= render "devise/shared/links" %>
+        </div>
+        	<button type="submit" class="btn btn-danger" style="width:40%; margin-right: 30%;">ورود</button>
+      <%end%>
+</section>

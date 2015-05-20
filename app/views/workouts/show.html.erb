@@ -1,0 +1,19 @@
+<div class="well text-center" id="program-show-main-div">
+
+<div class="row">
+
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>نام:</strong>
+  <%= @workout.name %>
+</p>
+
+<p>
+  <strong>Avatar:</strong>
+  <%=image_tag @workout.avatar.url %>
+</p>
+
+<%= link_to 'Edit', edit_workout_path(@workout) %> 
+</div>
+</div>

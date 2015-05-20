@@ -1,0 +1,50 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<head>
+    <title>نمودار پیشرفت</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+
+
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+<script src="http://code.highcharts.com/highcharts.js"></script>
+<script src="http://code.highcharts.com/adapters/standalone-framework.js"></script>
+   
+
+</head>
+<body>
+
+    <div id="container" style="min-width: 400px; height: 400px; margin: 0 auto"></div>
+
+<script>
+$(function () {
+    $(function () {
+        var chart;
+        $(document).ready(function () {
+            chart = new Highcharts.Chart({
+                chart: {
+                    renderTo: 'container'
+                },
+
+                //Code for the 'shared' tooltip in Highcharts, not required for HighStock
+                tooltip: {
+                    crosshairs: true,
+                    shared: true
+                },
+
+                series: [{
+                    type: 'line',
+                    data: [{ x: 0, y: 0 }, { x: 1, y: 1 }, { x: 1, y: 4}, { x: 4, y: 2 }, { x: 4, y: 0 }],
+
+                }
+                ]
+            });
+
+        });
+
+    });
+});
+</script>
+</body>
+</html>
