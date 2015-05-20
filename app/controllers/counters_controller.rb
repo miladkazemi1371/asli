@@ -11,7 +11,8 @@ class CountersController < ApplicationController
   # GET /counters/1.json
   def show
      @counter = Counter.find(params[:id])
-     @counter.count = @counter.count + 1
+     #@counter.count = @counter.count + 1
+     @counter.count =0
      @counter.save
   end
 
